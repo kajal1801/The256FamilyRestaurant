@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+}
+
+
+h1 {
+    font-size: 48px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+p {
+    margin: 20px 0;
+}
+
+.buttn {
+    border: 2px black solid;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 1.25rem;
+    background-color: rgba(253, 244, 221, 0.62);
+}
+
+.buttn:hover {
+    background-color: rgba(253, 244, 221, 0.79);;
+    transform: scale(1.02);
+    transition: 0.3s ease-in-out;
+}
+
+/* Reveal */
+
+.reveal{
+    position: relative;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+/* ScrollBar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 3.5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #4f4f4f7c;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #363636;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+/* Fade in */
+
+.fade-in{
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+/* Header & Home */
+
+header {
+    width: 100%;
+    height: 650px;
+}
+
+.container-home {
+    background: url('../images/restaurantImg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.view {
+    background-color: rgba(201, 201, 201, 0.62);
+    position: relative;
+    min-height: 100%;
+    width: 100%;
+}
+
+.content-home {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav {
+    background-color: rgba(253, 244, 221, 0.37);
+    max-height: 90px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 50px 0 30px;
+    width: 100%;
+}
+
+.logo {
+    width: 94px;
+    height: 72px;
+}
+
+.navbarr {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+}
+
+.links {
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0 20px;
+    color: black;
+}
+
+.links:hover {
+    color:rgba(22, 22, 22, 0.849);
+    transform: scale(1.2);
+    transition: 0.3s ease-in-out
+}
+
+#logo-text {
+    width: 800px;
+}
+
+#slogan {
+    font-size: 1.65rem;
+    font-style: italic;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+/* About */
+
+#about {
+    padding: 3rem 0;
+}
+
+.about {
+    margin: 1.5rem 0;
+}
+
+.content-about {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-text {
+    width: 35%;
+    margin-right: 50px;
+}
+
+.about-text p{
+    font-size: 1.25rem;
+}
+#about-img {
+    width: 40%;
+    border-radius: 20px;
+}
+
+/* Menu */
+
+#menu{
+    padding: 5rem 0 0 0;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: rgba(253, 244, 221, 0.62);
+}
+
+.menu-container {
+    width: 33.33%;
+    height: 100%;
+}
+
+.menu-container img {
+    width: 100%;
+    height: 550px;
+}
+
+.menu-content {
+    padding: 2%;
+    text-align: center;
+}
+
+.menu-content p {
+    margin: 5rem 4rem 4rem 4rem;
+    font-size: 1.25rem;
+}
+
+#download {
+    width: 30px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+/* Online */
+
+#online{
+    padding: 5rem 0;
+}
+
+.online {
+    text-align: center;
+}
+
+.online p {
+    font-size: 1.35rem;
+    margin: 1.5rem;
+    font-weight: 400;
+}
+
+.delivery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+.delivery-link{
+    width: 50%;
+    cursor: auto;
+}
+
+.swiggy,
+.zomato {
+    width: 55%;
+    height: 300px;
+    border: none;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+
+#reservation {
+    padding-bottom: 4rem;
+}
+
+.reservation {
+    padding: 5rem 0;
+    background-color: rgba(253, 244, 221, 0.62);
+}
+
+.reservation-content{
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#reserve-img{
+    width: 40%;
+    border-radius: 20px;
+}
+
+.reservation-text {
+    width: 40%;
+    padding: 2rem;
+    font-size: 1.25rem;
+}
+
+
+.reservation-text a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    margin-top: 1.5rem;
+}
+
+/* Map */
+
+.map{
+    margin-bottom: 3rem;
+    width: 100%;
+    text-align: center;
+}
+
+.map-container {
+    margin: 2rem 0;
+    width: 70%;
+    height: 550px;
+    box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+/* Footer */
+
+footer{ 
+    height: 330px;
+    background-color: rgba(0, 0, 0, 0.82);
+    bottom: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.footer-space {
+    width: 33.33%;
+    padding: 3% 1.5% 0 1.5%;
+}
+
+.left-sidenote h1{
+    text-align: left;
+    padding-left: 20px;
+    font-size: 36px;
+}
+.left-sidenote p{
+    padding: 20px;
+}
+
+.center-icons{
+    display: flex;
+}
+
+.footer-icons,
+.footer-icons-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer-icons-text{
+    justify-content: space-around;
+    align-items:flex-start;
+}
+
+.footer-sets{
+    width: 70px;
+    height: 70px;
+}
+
+.social-icons {
+    width: 40px;
+    height: 40px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1000px) {
+    header {
+        height: 500px;
+    }
+
+    #logo-text {
+        width: 500px;
+
+    }
+}
