@@ -34,8 +34,21 @@
                     <a class="links" href="#reservation">Reservation</a>
                     <a class="links" href="#contact">Contact</a>
                 </div>
+                <div class="hamburger">
+                    <div class="bar" id="bar1"></div>
+                    <div class="bar" id="bar2"></div>
+                    <div class="bar" id="bar3"></div>
+                </div>
             </nav>
         </div>
+        <div class="hidden-menu">
+            <a class="links" onclick="toggleMenu()" href="#home">Home</a>
+            <a class="links" onclick="toggleMenu()" href="#about">About</a>
+            <a class="links" onclick="toggleMenu()" href="#menu">Menu</a>
+            <a class="links" onclick="toggleMenu()" href="#online">Online</a>
+            <a class="links" onclick="toggleMenu()" href="#reservation">Reservation</a>
+            <a class="links" onclick="toggleMenu()" href="#contact">Contact</a>
+          </div>
     </header>
 
     <main>
@@ -68,7 +81,7 @@
 
         <section id="menu">
             <div class="menu">
-                <div class="menu-carousel menu-container">
+                <div class="menu-carousel top-menu menu-container">
                     <div id="carouselExampleCaptions" class="carousel slide">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
@@ -119,11 +132,11 @@
                 </div>
 
                 <div class="menu-content menu-container reveal">
-                    <h1>Chef's <br>Recommendations</h1>
+                    <h1>Chef's <br>Recommendation</h1>
                     <p>Explore our exquisite menu, a culinary delight crafted by our talented chefs. From appetizers to
                         main courses, each dish is a burst of flavors that cater to every palate.</p>
-                    <button class="buttn"><img id="download" src="./images/download.png"
-                            alt="Download">Download</button>
+                    <button class="buttn" ><a style="text-decoration: none; color: #000;" href="./images/Menu256.pdf" download="Menu Card"><img id="download" src="./images/download.png"
+                            alt="Download">Download</a></button>
                 </div>
 
                 <div class="menu-carousel menu-container">
