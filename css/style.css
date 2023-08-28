@@ -107,7 +107,7 @@ header {
 }
 
 .view {
-    background-color: rgba(201, 201, 201, 0.62);
+    background-color: rgb(201 201 201 / 42%);
     position: relative;
     min-height: 100%;
     width: 100%;
@@ -190,7 +190,7 @@ nav {
     font-size: 1.65rem;
     font-style: italic;
     letter-spacing: 2px;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 /* About */
